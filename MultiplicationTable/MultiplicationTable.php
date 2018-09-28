@@ -11,7 +11,8 @@
   for ($i = 1; $i <= 100; $i++) {
     echo "<tr><th>{$i}</th>";
     for ($j = 1; $j <= 100; $j++) {
-      echo "<td>{$i * $j}</td>";
+      $product = $i * $j;
+      echo "<td>{$product}</td>";
     }
     echo "</tr>";
   }
