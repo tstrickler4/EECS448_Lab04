@@ -76,7 +76,7 @@
   echo "</tr>";
 
   //total
-  $total = $_POST["beefQnty"] * 0.50 + $_POST["porkQnty"] * 0.40 + $_POST["chknQnty"] * 0.30 + $_POST["shrimpQnty"] * 0.20 + $_POST["misoQnty"] * 0.10;
+  $total = $_POST["beefQnty"] * 0.50 + $_POST["porkQnty"] * 0.40 + $_POST["chknQnty"] * 0.30 + $_POST["shrimpQnty"] * 0.20 + $_POST["misoQnty"] * 0.10 + $_POST["shipping"];
   echo "<th colspan='3'>Total Cost</th>";
   echo "<td>$" . number_format($total, 2) . "</td>";
 
