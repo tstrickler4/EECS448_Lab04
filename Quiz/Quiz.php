@@ -28,7 +28,7 @@
   }
 
   echo "You got " . $correct . " out of 5 correct.<br>";
-  echo "You got " . floor($correct / 5 * 100) . "%.";
+  echo "That's " . floor($correct / 5 * 100) . "%.";
   if ($correct == 5) {
     echo " Good job!";
   }
