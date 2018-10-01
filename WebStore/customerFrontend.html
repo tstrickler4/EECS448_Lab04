@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Web Store</title>
+    <link type="text/css" rel="stylesheet" href="style.css"></link>
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+  <body>
+    <div class="title"><h1>Welcome to the Poor Kid Ramen Shop!</h1></div>
+    <div class="form">
+      <form action="customerBackend.php" method="post">
+
+        <!-- username and password -->
+        <strong>Username:</strong><br>
+        <input type="email" name="username" required></input><br>
+        <strong>Password:</strong><br>
+        <input type="password" name="password" required></input><br><br>
+
+        <strong>What type(s) of ramen would you like?</strong><br>
+
+        <!-- beef -->
+        <input class="checkbox" type="checkbox" name="beef" onclick="revealRequired()">Beef ($0.50 each)</input><br>
+        <div class="hidden">Quantity:
+        <input class="quantity" type="number" name="beefQnty" value="0" min="0"></input></div>
+
+        <!-- pork -->
+        <input class="checkbox" type="checkbox" name="pork" onclick="revealRequired()">Pork ($0.40 each)</input><br>
+        <div class="hidden">Quantity:
+        <input class="quantity" type="number" name="porkQnty" value="0" min="0"></input></div>
+
+        <!-- chicken -->
+        <input class="checkbox" type="checkbox" name="chicken" onclick="revealRequired()">Chicken ($0.30 each)</input><br>
+        <div class="hidden">Quantity:
+        <input class="quantity" type="number" name="chknQnty" value="0" min="0"></input></div>
+
+        <!-- shrimp -->
+        <input class="checkbox" type="checkbox" name="shrimp" onclick="revealRequired()">Shrimp ($0.20 each)</input><br>
+        <div class="hidden">Quantity:
+        <input class="quantity" type="number" name="shrimpQnty" value="0" min="0"></input></div>
+
+        <!-- miso -->
+        <input class="checkbox" type="checkbox" name="miso" onclick="revealRequired()">Miso ($0.10 each)</input><br>
+        <div class="hidden">Quantity:
+        <input class="quantity" type="number" name="misoQnty" value="0" min="0"></input></div><br>
+
+        <!-- shipping -->
+        <strong>Please choose a shipping option.</strong><br>
+        <input type="radio" name="shipping" value="0"required>Free 7-Day</input><br>
+        <input type="radio" name="shipping" value="50" required>$50.00 Overnight</input><br>
+        <input type="radio" name="shipping" value="5" required>$5.00 3-Day</input><br><br>
+
+        <input type="reset" value="Reset" onclick="revealRequired()"></input>
+        <input type="submit" value="Submit"></input>
+      </form>
+    </div>
+  </body>
+</html>

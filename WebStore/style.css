@@ -1,0 +1,21 @@
+div.title {
+  background-color: red;
+  color: white;
+}
+
+div.form {
+  font-family: sans-serif;
+}
+
+div.hidden {
+  display: none;
+}
+
+table, tr, th, td {
+  text-align: center;
+  border: thin solid black;
+}
+
+th, td {
+  padding: 10px;
+}
